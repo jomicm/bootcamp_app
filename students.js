@@ -24,15 +24,3 @@ pool.query(`
   })
   .catch(err => console.error('query error', err.stack));
 
-// pool.query(`
-// SELECT s.id, s.name student_name, c.name cohort_name
-// FROM students s
-// JOIN cohorts c
-// ON s.cohort_id=c.id
-// LIMIT 5;
-// `)
-//   .then(res => {
-//     console.log(res.rows);
-//   })
-//   .catch(err => console.error('query error', err.stack));
-
